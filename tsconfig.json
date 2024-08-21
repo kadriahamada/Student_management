@@ -16,6 +16,7 @@
     "forceConsistentCasingInFileNames": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "emitDeclarationOnly": false
+    "emitDeclarationOnly": false,
+    "typeRoots": ["./src/types"]
   }
 }
