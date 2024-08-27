@@ -4,8 +4,8 @@
   "description": "This is a student management system",
   "main": "main.ts",
   "scripts": {
-    "start": "ts-node src/main.ts",
-    "dev": "nodemon --config nodemon.json"
+    "start": "ts-node main.ts",
+    "dev": "nodemon --watch src --watch main.ts --exec ts-node main.ts"
   },
   "author": "Rogers",
   "license": "ISC",

@@ -12,5 +12,3 @@ export class UserEntity extends MainEntity<string> {
   tel: string;
   positionId: number;
 }
-
-const user = new UserEntity();

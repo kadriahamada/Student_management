@@ -16,9 +16,10 @@ export class Model<T extends MainEntity<R>, R extends String | Number = number>
     this.db = dbInstance;
   }
 
-  async Create() {
+  protected Create() {
     try {
       this.entity.creationDate = new Date();
+      return this.entity;
     } catch (error) {
       throw new CustomError(error.message, 400, error.stack);
     }

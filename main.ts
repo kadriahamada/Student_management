@@ -2,10 +2,10 @@ import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import "express-async-errors";
-import MainRouter from "./routes/main.route";
-import { Logger } from "./middlewares/logger.middleware";
-import { NotFound } from "./middlewares/notfound.middleware";
-import { ErrorHandler } from "./middlewares/errorhandler.moddleware";
+import MainRouter from "./src/routes/main.route";
+import { Logger } from "./src/middlewares/logger.middleware";
+import { NotFound } from "./src/middlewares/notfound.middleware";
+import { ErrorHandler } from "./src/middlewares/errorhandler.moddleware";
 const app = express();
 app.use(Logger);
 
